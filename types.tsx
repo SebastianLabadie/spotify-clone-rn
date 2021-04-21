@@ -8,15 +8,25 @@ export type RootStackParamList = {
   NotFound: undefined;
 };
 
-export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+export type AlbumModel = {
+  AlbumId: string;
+  AlbumImageUri: string;
+  AlbumArtistHeadLine: string;
 };
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
-};
+export type AlbumDetailModel={
+  AlbumId: string;
+  AlbumName: string;
+  Albumby: string;
+  AlbumNumberOfLikes: string;
+  AlbumImageUri: string;
+  AlbumArtistHeadLine:string;
+  songs:Song[];
+}
 
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
-};
+export type Song={
+  SongId: string,
+  SongImageUri: string,
+  SongTitle: string ,
+  SongArtist: string
+}
